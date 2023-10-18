@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/10/18/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Portal</title>
+    <url>/2023/10/18/Portal/</url>
+    <content><![CDATA[<h4 id="1-前端接口文档"><a href="#1-前端接口文档" class="headerlink" title="1.前端接口文档"></a>1.前端接口文档</h4><h4 id="参数解释，（字母顺序，请根据自己的需要改params-php）："><a href="#参数解释，（字母顺序，请根据自己的需要改params-php）：" class="headerlink" title="参数解释，（字母顺序，请根据自己的需要改params.php）："></a>参数解释，（字母顺序，请根据自己的需要改params.php）：</h4><table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>解释</th>
+<th>字段名</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>country[]</td>
+<td>国家</td>
+<td>from</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>host</td>
+<td>域名</td>
+<td>ids</td>
+<td>id</td>
+</tr>
+<tr>
+<td>keyword</td>
+<td>关键词</td>
+<td>method</td>
+<td>方法</td>
+</tr>
+<tr>
+<td>page</td>
+<td>第几页</td>
+<td>province[]</td>
+<td>省份</td>
+</tr>
+<tr>
+<td>search_name</td>
+<td>搜索字段名</td>
+<td>search_type</td>
+<td>搜索类型</td>
+</tr>
+<tr>
+<td>size</td>
+<td>每页多少个数据</td>
+<td>to</td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>type</td>
+<td>类型</td>
+<td>zone</td>
+<td>主域名</td>
+</tr>
+</tbody></table>
+<p>Notice: Undefined variable: show_name in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 296</p>
+<h4 id="共2个示例"><a href="#共2个示例" class="headerlink" title="(共2个示例)"></a>(共2个示例)</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">&#123;&#123;askme&#125;&#125;/api/user/login</span><br></pre></td></tr></table></figure>
+
+<h5 id="示例1：登录-用户不存在"><a href="#示例1：登录-用户不存在" class="headerlink" title="示例1：登录-用户不存在"></a>示例1：登录-用户不存在</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">GET &#123;&#123;askme&#125;&#125;/api/user/login</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">10113</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;user not exist&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="示例2：登录-正常"><a href="#示例2：登录-正常" class="headerlink" title="示例2：登录-正常"></a>示例2：登录-正常</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">GET &#123;&#123;askme&#125;&#125;/api/user/login</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;success&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1037547965@qq.com&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;nickname&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;token&quot;</span><span class="punctuation">:</span> <span class="string">&quot;b76682ce3b7c47a1917d920a66f23755&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;level&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>Notice: Undefined variable: show_name in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 296</p>
+<h4 id="共0个示例"><a href="#共0个示例" class="headerlink" title="(共0个示例)"></a>(共0个示例)</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">&#123;&#123;askme&#125;&#125;/api/captcha</span><br></pre></td></tr></table></figure>
+
+<h5 id="示例1：获取图片验证码"><a href="#示例1：获取图片验证码" class="headerlink" title="示例1：获取图片验证码"></a>示例1：获取图片验证码</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">GET &#123;&#123;askme&#125;&#125;/api/captcha</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">没有api的example，请自行补充。</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<p>Notice: Undefined variable: show_name in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 296</p>
+<h4 id="共2个示例-1"><a href="#共2个示例-1" class="headerlink" title="(共2个示例)"></a>(共2个示例)</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">&#123;&#123;askme&#125;&#125;/api/user/register</span><br></pre></td></tr></table></figure>
+
+<h5 id="示例1：注册-验证码错误"><a href="#示例1：注册-验证码错误" class="headerlink" title="示例1：注册-验证码错误"></a>示例1：注册-验证码错误</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">GET &#123;&#123;askme&#125;&#125;/api/user/register</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">10115</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;captcha not right&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="示例2：注册"><a href="#示例2：注册" class="headerlink" title="示例2：注册"></a>示例2：注册</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">POST &#123;&#123;askme&#125;&#125;/api/user/register</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;success&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;data&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;1037547965@qq.com&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;nickname&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;token&quot;</span><span class="punctuation">:</span> <span class="string">&quot;21351091e844cd81ea2d21f663aee677&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;level&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;vip&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>Notice: Undefined variable: show_name in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 296</p>
+<h4 id="共2个示例-2"><a href="#共2个示例-2" class="headerlink" title="(共2个示例)"></a>(共2个示例)</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">&#123;&#123;askme&#125;&#125;/api/code</span><br></pre></td></tr></table></figure>
+
+<h5 id="示例1：发送验证码-过于频繁"><a href="#示例1：发送验证码-过于频繁" class="headerlink" title="示例1：发送验证码-过于频繁"></a>示例1：发送验证码-过于频繁</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">POST &#123;&#123;askme&#125;&#125;/api/code</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">10116</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;msg&quot;</span><span class="punctuation">:</span> <span class="string">&quot;captcha too frequently&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="示例2：发送验证码-正常"><a href="#示例2：发送验证码-正常" class="headerlink" title="示例2：发送验证码-正常"></a>示例2：发送验证码-正常</h5><figure class="highlight http"><table><tr><td class="code"><pre><span class="line">POST &#123;&#123;askme&#125;&#125;/api/code</span><br></pre></td></tr></table></figure>
+
+<p><strong>Request Params:</strong></p>
+<p>Warning: Invalid argument supplied for foreach() in C:\Users\Think\Desktop\shuiping\postception\src\PostmanToMarkdown.php on line 178</p>
+<p><strong>Response:</strong></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="number">200</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;success&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+]]></content>
+  </entry>
+</search>
